@@ -24,7 +24,35 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
 
+    // 1. Ouvrir / Fermer le menu au clic sur le hamburger
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+            
+            // Change l'icône : bars (menu) <=> times (croix)
+            const icon = navToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+    }
+
+    // 2. Fermer le menu automatiquement quand on clique sur un lien
+    // (Sinon le menu reste ouvert et cache la section vers laquelle on va)
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('show');
+            
+            const icon = navToggle.querySelector('i');
+            icon.classList.add('fa-bars');
+            icon.classList.remove('fa-times');
+        });
+    });
+});
 // --- GESTION DU LIEN ACTIF AU SCROLL ---
 
 const sections = document.querySelectorAll('section'); // Sélectionne toutes tes sections

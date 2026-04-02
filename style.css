@@ -1003,6 +1003,8 @@ body {
         transition: 0.4s;
         backdrop-filter: blur(20px);
         box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+        z-index: 1001;
+        display: flex; 
     }
     
     .nav-menu.show { right: 0; }
