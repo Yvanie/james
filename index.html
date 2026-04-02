@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Portfolio | Full-Stack Developer</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span>JAMES</span>.DEV
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#project" class="nav-link">Project</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                
+                <li class="nav-separator"></li>
+
+                <li>
+                    <button id="theme-toggle" class="theme-switch">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+   <!--  <main style="height: 200vh; padding-top: 120px; text-align: center;">
+        <h1>Section Home</h1>
+        <p>Faites défiler pour voir l'effet de la Navbar.</p>
+    </main> -->
+
+    <section id="home" class="home">
+    <div class="home-container">
+        <div class="home-content">
+            <div class="status-badge">
+                <span class="dot"></span> Disponible pour de nouveaux projets
+            </div>
+            
+            <h1 class="home-title">
+                Solutions Full-Stack <br>
+                <span>Robustes & Innovantes</span>
+            </h1>
+            
+            <p class="home-description">
+                Expert en <strong>Angular 18</strong> et <strong>ASP.NET Core 8</strong>. 
+                Je conçois des applications web sécurisées, scalables et centrées sur l'expérience utilisateur.
+            </p>
+
+            <div class="home-btns">
+                <a href="#project" class="btn-primary">Voir mes Projets</a>
+                <a href="#contact" class="btn-outline">Me Contacter</a>
+            </div>
+
+            <div class="home-stack">
+                <p>Ma Stack principale :</p>
+                <div class="stack-icons">
+                    <i class="fab fa-angular" title="Angular"></i>
+                    <i class="fas fa-code" title="C# / .NET"></i>
+                    <i class="fas fa-database" title="SQL Server"></i>
+                    <i class="fab fa-js" title="TypeScript"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bg-blur blur-1"></div>
+    <div class="bg-blur blur-2"></div>
+</section>
+
+<section id="about" class="about">
+    <div class="container">
+        <div class="section-header">
+            <span class="subtitle">Mon Parcours</span>
+            <h2 class="title">À Propos de Moi</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="about-bento">
+            <div class="bento-item bio">
+                <div class="bento-icon"><i class="fas fa-user-tie"></i></div>
+                <h3>Qui suis-je ?</h3>
+                <p>Passionné par le <strong>Génie Logiciel</strong>, je me spécialise dans la création d'architectures robustes avec <strong>ASP.NET Core</strong> et d'interfaces réactives avec <strong>Angular</strong>.</p>
+                <p>Mon approche combine rigueur technique et sens du produit, acquise notamment lors de projets critiques pour le secteur bancaire et industriel.</p>
+            </div>
+
+            <div class="bento-item education">
+                <h3>Formation</h3>
+                <div class="edu-info">
+                    <strong>Bachelor of Computer Science</strong>
+                    <p>IUC • Douala, Cameroun</p>
+                    <span class="year">2018 - 2022</span>
+                </div>
+            </div>
+
+            <div class="bento-item info-chips">
+                <div class="chip"><i class="fas fa-map-marker-alt"></i> Douala, Cameroun</div>
+                <div class="chip"><i class="fas fa-language"></i> Français / Anglais</div>
+                <div class="chip"><i class="fas fa-check-circle"></i> Autonome & Rigoureux</div>
+            </div>
+
+            <div class="bento-item quote">
+                <p>"Transformer des besoins complexes en solutions logicielles simples et maintenables."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="skills">
+    <div class="container">
+        <div class="section-header">
+            <span class="subtitle">Expertise</span>
+            <h2 class="title">Compétences Techniques</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fab fa-angular"></i>
+                    <h3>Frontend Development</h3>
+                </div>
+                <ul class="skill-list">
+                    <li>Angular 18 (Standalone, Signals)</li>
+                    <li>TypeScript & RxJS</li>
+                    <li>Reactive Forms & Routing</li>
+                    <li>Data Viz (ng2-charts)</li>
+                    <li>UI Frameworks (Tailwind, Material)</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend Development</h3>
+                </div>
+                <ul class="skill-list">
+                    <li>ASP.NET Core 8 (Web API)</li>
+                    <li>C# & Entity Framework Core</li>
+                    <li>SQL Server (Migrations, LINQ)</li>
+                    <li>JWT & Identity Security</li>
+                    <li>RESTful Architecture</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fas fa-tools"></i>
+                    <h3>Outils & Méthodes</h3>
+                </div>
+                <ul class="skill-list">
+                    <li>Git / GitHub (Version Control)</li>
+                    <li>Agile / Scrum</li>
+                    <li>Power Platform (PowerApps)</li>
+                    <li>SharePoint Content Manager</li>
+                    <li>Figma (UI/UX Design)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="experience">
+    <div class="container">
+        <div class="section-header">
+            <span class="subtitle">Parcours Professionnel</span>
+            <h2 class="title">Mon Expérience</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Déc. 2023 - Présent</div>
+                <div class="timeline-content">
+                    <h3>Power Platform Developer / SharePoint Manager</h3>
+                    <span class="company">Africa Univ • Douala</span>
+                    <p>Digitalisation des processus bancaires pour <strong>Afriland First Bank</strong>.</p>
+                    <ul class="exp-details">
+                        <li>Développement d'une plateforme de requêtes de transfert à distance via PowerApps.</li>
+                        <li>Gestion documentaire sécurisée sur SharePoint Online pour Industrial Solution Company.</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span>Power Platform</span> <span>SharePoint</span> <span>Security</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Juillet 2023 - Déc. 2023</div>
+                <div class="timeline-content">
+                    <h3>Web & Application Developer</h3>
+                    <span class="company">Africa Univ • Douala</span>
+                    <p>Refonte complète de l'identité numérique de l'entreprise.</p>
+                    <ul class="exp-details">
+                        <li>Migration de Google Sites vers le module site web d'Odoo.</li>
+                        <li>Intégration de Google Analytics pour le suivi des comportements clients.</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span>Odoo</span> <span>Google Analytics</span> <span>UI/UX</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Mars 2023 - Juin 2023</div>
+                <div class="timeline-content">
+                    <h3>Web Developer Intern</h3>
+                    <span class="company">Saaje Engineering & Consulting</span>
+                    <p>Conception d'un outil interne de monitoring de projets.</p>
+                    <ul class="exp-details">
+                        <li>Développement de A à Z d'un système de gestion de tâches avec RBAC (Rôles).</li>
+                        <li>Visualisation de données et tableaux de bord pour l'optimisation de la charge de travail.</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span>Full-Stack</span> <span>Dashboard</span> <span>Auth System</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="project" class="project">
+    <div class="container">
+        <div class="section-header">
+            <span class="subtitle">Réalisations</span>
+            <h2 class="title">Projets Récents</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" title="Voir la démo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" title="Code source"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1550565118-3a14e8d0386f?q=80&w=800" alt="Banking App">
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Fintech / Banking</span>
+                    <h3>Portal de Transfert Bancaire</h3>
+                    <p>Interface sécurisée permettant la gestion et le suivi des ordres de virement à distance.</p>
+                    <div class="project-tags">
+                        <span>Angular 18</span>
+                        <span>ASP.NET Core</span>
+                        <span>SQL Server</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" title="Voir la démo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" title="Code source"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800" alt="Portfolio Site">
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Web Design</span>
+                    <h3>Site Vitrine ISC-CM</h3>
+                    <p>Développement d'un site web réactif et optimisé SEO pour une entreprise de solutions industrielles.</p>
+                    <div class="project-tags">
+                        <span>WordPress</span>
+                        <span>Elementor</span>
+                        <span>UI/UX</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" title="Voir la démo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" title="Code source"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800" alt="Portfolio Site">
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Enterprise Tool</span>
+                    <h3>Dashboard Monitoring</h3>
+                    <p>Tableau de bord interactif pour la visualisation des KPI et la gestion des flux de travail internes.</p>
+                    <div class="project-tags">
+                        <span>PowerBI</span>
+                        <span>SharePoint</span>
+                        <span>API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <span class="subtitle">Me Joindre</span>
+            <h2 class="title">Démarrons un Projet</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Parlons de vos besoins</h3>
+                <p>Je suis disponible pour des opportunités en Full-Stack (Angular/.NET) ou pour discuter de vos projets de digitalisation.</p>
+                
+                <div class="info-list">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span>Email</span>
+                            <p>james.ledou@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <span>Téléphone</span>
+                            <p>+237 691 639 351</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span>Localisation</span>
+                            <p>Douala, Cameroun</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/bakot-ndjock-emmanuel-james-ledoux-29020a286"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Leab-JB"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/237691639351"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Votre Nom" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Votre Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Sujet" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Votre Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">
+                    Envoyer le message <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="nav-logo"><span>JAMES</span>.DEV</a>
+                <p>© 2026 • Conçu et développé avec passion.</p>
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="footer-socials">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Built with <span class="tech-stack">Angular & .NET Spirit</span></p>
+            <button id="back-to-top" class="back-to-top" title="Remonter en haut">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+        </div>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
