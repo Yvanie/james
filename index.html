@@ -24,9 +24,7 @@
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#project" class="nav-link">Project</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
-                
                 <li class="nav-separator"></li>
-
                 <li>
                     <button id="theme-toggle" class="theme-switch">
                         <i class="fas fa-moon"></i>
@@ -169,6 +167,19 @@
                     <li>Power Platform (PowerApps)</li>
                     <li>SharePoint Content Manager</li>
                     <li>Figma (UI/UX Design)</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Game Development</h3>
+                </div>
+                <ul class="skill-list">
+                    <li>Unity Engine (C# Scripting)</li>
+                    <li>Physique & Gameplay Logic</li>
+                    <li>2D/3D Asset Integration</li>
+                    <li>Optimisation de Performance</li>
+                    <li>Prototypage Rapide</li>
                 </ul>
             </div>
         </div>
@@ -325,56 +336,58 @@
         </div>
 
         <div class="contact-grid">
-            <div class="contact-info">
-                <h3>Parlons de vos besoins</h3>
-                <p>Je suis disponible pour des opportunités en Full-Stack (Angular/.NET) ou pour discuter de vos projets de digitalisation.</p>
-                
-                <div class="info-list">
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <span>Email</span>
-                            <p>james.ledou@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <div>
-                            <span>Téléphone</span>
-                            <p>+237 691 639 351</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <span>Localisation</span>
-                            <p>Douala, Cameroun</p>
-                        </div>
-                    </div>
+            <div class="contact-side">
+                <div class="contact-card-header">
+                    <h3>Parlons de vos besoins</h3>
+                    <p>Je suis disponible pour discuter de vos projets de digitalisation, de développement Full-Stack ou de design UI/UX.</p>
                 </div>
 
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/bakot-ndjock-emmanuel-james-ledoux-29020a286"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/Leab-JB"><i class="fab fa-github"></i></a>
-                    <a href="https://wa.me/237691639351"><i class="fab fa-whatsapp"></i></a>
+                <div class="social-cards-grid">
+                    <a href="https://www.linkedin.com/in/bakot-ndjock-emmanuel-james-ledoux-29020a286" target="_blank" class="social-card linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                        <p>Mon profil pro</p>
+                    </a>
+                    
+                    <a href="https://github.com/Leab-JB" target="_blank" class="social-card github">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                        <p>Mes dépôts de code</p>
+                    </a>
+                    
+                    <a href="https://wa.me/237691639351" target="_blank" class="social-card whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                        <p>Discuter en direct</p>
+                    </a>
                 </div>
             </div>
 
-            <form class="contact-form">
+            <form class="contact-form" action="https://formspree.io/f/ton_identifiant" method="POST">
+                <div class="form-header">
+                    <h4>Envoyez-moi un message</h4>
+                    <i class="fas fa-envelope-open-text"></i>
+                </div>
+                
                 <div class="form-group">
-                    <input type="text" placeholder="Votre Nom" required>
+                    <input type="text" name="name" placeholder="Votre Nom complet" required>
+                    <i class="fas fa-user"></i>
                 </div>
                 <div class="form-group">
-                    <input type="email" placeholder="Votre Email" required>
+                    <input type="email" name="email" placeholder="Votre Email professionnel" required>
+                    <i class="fas fa-envelope"></i>
                 </div>
                 <div class="form-group">
-                    <input type="text" placeholder="Sujet" required>
+                    <input type="text" name="subject" placeholder="Sujet de votre demande" required>
+                    <i class="fas fa-pen"></i>
                 </div>
-                <div class="form-group">
-                    <textarea placeholder="Votre Message" rows="5" required></textarea>
+                <div class="form-group textarea-group">
+                    <textarea name="message" placeholder="Détaillez votre projet ici..." rows="6" required></textarea>
                 </div>
+                
                 <button type="submit" class="btn-submit">
-                    Envoyer le message <i class="fas fa-paper-plane"></i>
+                    <span>Envoyer le message</span>
+                    <i class="fas fa-paper-plane"></i>
                 </button>
             </form>
         </div>
