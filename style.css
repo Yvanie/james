@@ -1,24 +1,25 @@
 :root {
     /* Thème Sombre (Défaut) */
-     --bg-body: #ffffff;
-    --bg-nav: rgba(255, 255, 255, 0.9);
-    --text-main: #0f172a;
-    --text-nav: #64748b;
-    --accent: #2563eb;
-    --border: rgba(0, 0, 0, 0.1);
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-   
-}
-
-/* Thème Clair */
-[data-theme="light"] {
-  --bg-body: #030712;
+    --bg-body: #030712;
     --bg-nav: rgba(3, 7, 18, 0.85);
     --text-main: #f8fafc;
     --text-nav: #94a3b8;
     --accent: #3b82f6;
     --border: rgba(255, 255, 255, 0.1);
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+     
+   
+}
+
+/* Thème Clair */
+[data-theme="light"] {
+  --bg-body: #ffffff;
+    --bg-nav: rgba(255, 255, 255, 0.9);
+    --text-main: #0f172a;
+    --text-nav: #64748b;
+    --accent: #2563eb;
+    --border: rgba(0, 0, 0, 0.1);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 * {
@@ -181,7 +182,8 @@ body {
     font-size: 0.85rem;
     font-weight: 600;
     border: 1px solid rgba(59, 130, 246, 0.2);
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
     animation: fadeInUp 0.8s ease;
 }
 
@@ -195,7 +197,7 @@ body {
 
 /* Titre principal */
 .home-title {
-    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-size: clamp(2rem, 4vw, 4rem);
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 1.5rem;
@@ -395,6 +397,54 @@ body {
     color: var(--text-nav);
     line-height: 1.6;
     margin-bottom: 10px;
+}
+/* Style pour les certifications dans le Bento */
+.cert-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.cert-item:not(:last-child) {
+    border-bottom: 1px solid var(--border);
+}
+
+.cert-item i {
+    color: var(--accent);
+    font-size: 1.2rem;
+    margin-top: 3px;
+}
+
+.cert-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.cert-text strong {
+    font-size: 0.95rem;
+    color: var(--text-main);
+    line-height: 1.3;
+}
+
+.cert-link {
+    font-size: 0.8rem;
+    color: var(--accent);
+    text-decoration: none;
+    margin-top: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.cert-link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.cert-link i {
+    font-size: 0.7rem;
+    margin-left: 3px;
 }
 
 /* Info Chips */
