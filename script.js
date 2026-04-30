@@ -145,7 +145,7 @@ form.addEventListener('submit', async (e) => {
     }
 });
 const textElement = document.getElementById('typewriter');
-const phrases = ["Full-Stack Web", "Game Development", "Business Automation"];
+const phrases = ["Power Platform Functional Consultant", "Full-stack Web Developer", "Business Automation"];
 let phraseIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
