@@ -169,6 +169,28 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
+.home-typing {
+    font-size: clamp(1rem, 3vw, 3rem);
+    margin-top: 5px;
+    color: var(--text-nav);
+    font-weight: 500;
+     margin-bottom: px;
+}
+
+#typewriter {
+    color: var(--accent); /* Ton bleu ciel */
+    font-weight: 700;
+}
+
+.cursor {
+    color: var(--accent);
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
 
 /* Badge de statut */
 .status-badge {
@@ -182,7 +204,7 @@ body {
     font-size: 0.85rem;
     font-weight: 600;
     border: 1px solid rgba(59, 130, 246, 0.2);
-    margin-top: 3rem;
+    margin-top: 5rem;
     margin-bottom: 1rem;
     animation: fadeInUp 0.8s ease;
 }

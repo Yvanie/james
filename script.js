@@ -144,3 +144,40 @@ form.addEventListener('submit', async (e) => {
         alert("Oups ! Un problème est survenu. Veuillez réessayer.");
     }
 });
+const textElement = document.getElementById('typewriter');
+const phrases = ["Full-Stack Web", "Game Development", "Business Automation"];
+let phraseIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typeSpeed = 100;
+
+function type() {
+    const currentPhrase = phrases[phraseIndex];
+    
+    if (isDeleting) {
+        // Effacement
+        textElement.textContent = currentPhrase.substring(0, charIndex - 1);
+        charIndex--;
+        typeSpeed = 50; // Plus rapide quand on efface
+    } else {
+        // Écriture
+        textElement.textContent = currentPhrase.substring(0, charIndex + 1);
+        charIndex++;
+        typeSpeed = 100;
+    }
+
+    // Gestion des pauses et changement de phrase
+    if (!isDeleting && charIndex === currentPhrase.length) {
+        isDeleting = true;
+        typeSpeed = 2000; // Pause à la fin de la phrase
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        typeSpeed = 500; // Petite pause avant de recommencer
+    }
+
+    setTimeout(type, typeSpeed);
+}
+
+// Lancer l'animation au chargement
+document.addEventListener('DOMContentLoaded', type);
